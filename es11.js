@@ -19,7 +19,6 @@ const planetSchema = Joi.object({
   name: Joi.string().required(),
 });
 
-// Route to get all planets
 app.get('/api/planets', (req, res) => {
   res.status(200).json(planets);
 });
